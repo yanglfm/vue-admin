@@ -15,25 +15,25 @@
 </template>
 
 <script>
-import { mapGetters } from 'vuex'
-import variables from '@/styles/variables.scss'
-import SidebarItem from './SidebarItem'
+  import { mapGetters } from 'vuex'
+  import variables from '@/styles/variables.scss'
+  import SidebarItem from './SidebarItem'
 
-export default {
-  components: { SidebarItem },
-  computed: {
-    ...mapGetters([
-      'sidebar'
-    ]),
-    routes() {
-      return this.$router.options.routes
-    },
-    variables() {
-      return variables
-    },
-    isCollapse() {
-      return !this.sidebar.opened
+  export default {
+    components: { SidebarItem },
+    computed: {
+      ...mapGetters([
+        'sidebar'
+      ]),
+      routes() {
+        return this.$router.options.routes
+      },
+      variables() {
+        return variables
+      },
+      isCollapse() {
+        return !this.sidebar.opened
+      }
     }
   }
-}
 </script>

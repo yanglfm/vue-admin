@@ -22,9 +22,9 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
-  import Breadcrumb from '@/components/Breadcrumb';
-  import Hamburger from '@/components/Hamburger';
+  import { mapGetters } from 'vuex'
+  import Breadcrumb from '@/components/Breadcrumb'
+  import Hamburger from '@/components/Hamburger'
 
   export default {
     components: {
@@ -43,11 +43,11 @@
       },
       logout() {
         this.$store.dispatch('LogOut').then(() => {
-          location.reload(); // 为了重新实例化vue-router对象 避免bug
-        });
+          location.reload() // 为了重新实例化vue-router对象 避免bug
+        })
       }
     }
-  };
+  }
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>

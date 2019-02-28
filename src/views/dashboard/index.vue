@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import { mapGetters } from 'vuex';
+  import { mapGetters } from 'vuex'
 
   export default {
     name: 'Dashboard',
@@ -20,14 +20,14 @@
     methods: {
       getAll() {
         this.$store.dispatch('Login', this.loginForm).then(() => {
-          this.loading = false;
-          this.$router.push({ path: this.redirect || '/' });
+          this.loading = false
+          this.$router.push({ path: this.redirect || '/' })
         }).catch(() => {
-          this.loading = false;
-        });
+          this.loading = false
+        })
       }
     }
-  };
+  }
 </script>
 
 <style rel="stylesheet/scss" lang="scss" scoped>

@@ -66,11 +66,6 @@
     methods: {
       onSubmit() {
         this.$message('submit!')
-        let i = 1
-        switch (i) {
-          case 1:
-            break
-        }
       },
       onCancel() {
         this.$message({
